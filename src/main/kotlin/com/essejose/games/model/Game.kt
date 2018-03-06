@@ -1,0 +1,14 @@
+package com.essejose.games.model
+
+import org.springframework.data.annotation.Id
+import org.springframework.data.mongodb.core.mapping.Document
+
+@Document
+data class  Game(@Id var id: String? = null,
+                 var nome: String,
+                 var urlImage: String,
+                 var anoLancamento: Integer
+                 ){
+
+
+}
